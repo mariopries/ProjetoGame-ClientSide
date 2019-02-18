@@ -15,7 +15,6 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float teste=0;
         //Store the current horizontal input in the float moveHorizontal.
         float moveHorizontal = Input.GetAxis ("Horizontal");
 
