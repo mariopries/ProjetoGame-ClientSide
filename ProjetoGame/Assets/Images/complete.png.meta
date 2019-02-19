@@ -9,6 +9,7 @@ TextureImporter:
     21300008: grayGround
     21300010: waterGround
     21300012: grayGroundTop
+    21300014: longTree
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -219,13 +220,33 @@ TextureImporter:
         width: 55
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 9f42bbb8144263545b516fe64fba8bbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longTree
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 157
+        width: 29
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1810775e2eef1ba4a98a141acc8b2d9a
       vertices: []
       indices: 
       edges: []
