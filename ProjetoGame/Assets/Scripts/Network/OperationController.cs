@@ -1,34 +1,92 @@
 ﻿using ExitGames.Client.Photon;
-using System;
+using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OperationController : PhotonPeer
+public class OperationController : MonoBehaviour, IPhotonPeerListener
 {
-    protected internal static Type PingImplementation = null;
+    private PhotonPeer peer;
+    private bool isConnected = false;
 
-    private readonly Dictionary<byte, object> opParameters = new Dictionary<byte, object>(); // used in OpRaiseEvent() (avoids lots of new Dictionary() calls)
-
-
-    /// <summary>
-    /// Creates a Peer with specified connection protocol. You need to set the Listener before using the peer.
-    /// </summary>
-    /// <remarks>Each connection protocol has it's own default networking ports for Photon.</remarks>
-    /// <param name="protocolType">The preferred option is UDP.</param>
-    public OperationController(ConnectionProtocol protocolType) : base(protocolType)
+    // Start is called before the first frame update
+    void Start()
     {
-        // this does not require a Listener, so:
-        // make sure to set this.Listener before using a peer!
+        peer = new PhotonPeer(this, ConnectionProtocol.Udp);
+        peer.Connect("127.0.0.1:5055", "Loadbalancing");
     }
 
-    /// <summary>
-    /// Creates a Peer with specified connection protocol and a Listener for callbacks.
-    /// </summary>
-    public OperationController(IPhotonPeerListener listener, ConnectionProtocol protocolType) : this(protocolType)
+    // Update is called once per frame
+    void Update()
     {
-        this.Listener = listener;
+        peer.Service();
     }
 
- 
+
+    public void DebugReturn(DebugLevel level, string message)
+    {
+        Debug.Log("DebugReturn : " + message);
+    }
+
+    public void OnOperationResponse(OperationResponse operationResponse)
+    {
+        Debug.Log("OnOperationResponse");
+    }
+
+    public void OnStatusChanged(StatusCode statusCode)
+    {
+        switch (statusCode)
+        {
+            case StatusCode.Connect:
+                isConnected = true;
+                break;
+            case StatusCode.Disconnect:
+                isConnected = true;
+                break;
+            case StatusCode.Exception:
+                break;
+            case StatusCode.ExceptionOnConnect:
+                break;
+            case StatusCode.SecurityExceptionOnConnect:
+                break;
+            case StatusCode.SendError:
+                break;
+            case StatusCode.ExceptionOnReceive:
+                break;
+            case StatusCode.TimeoutDisconnect:
+                break;
+            case StatusCode.DisconnectByServerTimeout:
+                isConnected = false;
+                break;
+            case StatusCode.DisconnectByServerUserLimit:
+                isConnected = false;
+                break;
+            case StatusCode.DisconnectByServerLogic:
+                isConnected = false;
+                break;
+            case StatusCode.DisconnectByServerReasonUnknown:
+                isConnected = false;
+                break;
+            case StatusCode.EncryptionEstablished:
+                break;
+            case StatusCode.EncryptionFailedToEstablish:
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void OnEvent(EventData eventData)
+    {
+        Debug.Log("OnEvent");
+    }
+
+    private void SendOperation(byte operationCode, Dictionary<byte, object> operationParameters, SendOptions sendOptions)
+    {
+        if (isConnected)
+        {
+            peer.SendOperation(operationCode, operationParameters, sendOptions);
+        }
+    }
+
 }
