@@ -6,6 +6,7 @@ public class MovePlayer : MonoBehaviour
 {
     private float vel;
     private Vector2 dir;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,8 @@ public class MovePlayer : MonoBehaviour
     {
         Inputs();
         transform.Translate(dir*vel*Time.deltaTime);
+
+        AtualizaAnimation();
     }
 
     void Inputs()
@@ -36,5 +39,9 @@ public class MovePlayer : MonoBehaviour
         if(Input.GetKey(KeyCode.RightArrow)){
             dir+=Vector2.right;
         }
+    }
+
+    void AtualizaAnimation(){
+
     }
 }
