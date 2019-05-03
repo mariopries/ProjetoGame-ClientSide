@@ -129,10 +129,10 @@ TextureImporter:
       name: Ativo 5_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 863
-        width: 311
-        height: 156
+        x: 51
+        y: 861
+        width: 315
+        height: 160
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,12 +150,12 @@ TextureImporter:
       name: Ativo 5_1
       rect:
         serializedVersion: 2
-        x: 482.00003
-        y: 752.99994
-        width: 301.99997
-        height: 335.00006
+        x: 480.00003
+        y: 752.49994
+        width: 305.99997
+        height: 337.50006
       alignment: 9
-      pivot: {x: 0.49999994, y: 0.5000001}
+      pivot: {x: 0.49999994, y: 0.49777788}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: Ativo 5_2
       rect:
         serializedVersion: 2
-        x: 904
-        y: 981
-        width: 145
-        height: 109
+        x: 902
+        y: 979
+        width: 149
+        height: 111
       alignment: 9
-      pivot: {x: 0.5, y: 0.52293575}
+      pivot: {x: 0.5, y: 0.5315316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,10 +192,10 @@ TextureImporter:
       name: Ativo 5_3
       rect:
         serializedVersion: 2
-        x: 856
-        y: 756
-        width: 144
-        height: 88
+        x: 854
+        y: 754
+        width: 148
+        height: 92
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,12 +213,12 @@ TextureImporter:
       name: Ativo 5_4
       rect:
         serializedVersion: 2
-        x: 1118
-        y: 723
-        width: 187
-        height: 231
+        x: 1116
+        y: 721
+        width: 189
+        height: 235
       alignment: 9
-      pivot: {x: 0.51336896, y: 0.5}
+      pivot: {x: 0.5185185, y: 0.49999997}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,12 +234,12 @@ TextureImporter:
       name: Ativo 5_8
       rect:
         serializedVersion: 2
-        x: 622
-        y: 543
-        width: 116.99994
-        height: 89
+        x: 620
+        y: 541
+        width: 121
+        height: 93
       alignment: 9
-      pivot: {x: 0.50000024, y: 0.5}
+      pivot: {x: 0.49999997, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,11 +277,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 326
-        width: 242
-        height: 220
+        y: 324
+        width: 244
+        height: 224
       alignment: 9
-      pivot: {x: 0.4896694, y: 0.49999997}
+      pivot: {x: 0.48565573, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,12 +318,12 @@ TextureImporter:
       name: Ativo 5_12
       rect:
         serializedVersion: 2
-        x: 848
-        y: 488
-        width: 123
-        height: 115
+        x: 847
+        y: 486
+        width: 127
+        height: 119
       alignment: 9
-      pivot: {x: 0.49999997, y: 0.49999997}
+      pivot: {x: 0.492126, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,12 +339,12 @@ TextureImporter:
       name: Ativo 5_13
       rect:
         serializedVersion: 2
-        x: 5
+        x: 5.7297363
         y: 0
         width: 282
-        height: 109
+        height: 108.692566
       alignment: 9
-      pivot: {x: 0.49999997, y: 0.46788988}
+      pivot: {x: 0.4974122, y: 0.46921328}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,12 +381,12 @@ TextureImporter:
       name: Ativo 5_15
       rect:
         serializedVersion: 2
-        x: 950.00006
-        y: 9
-        width: 264.99994
-        height: 243
+        x: 947.00006
+        y: 7
+        width: 268.99994
+        height: 247
       alignment: 9
-      pivot: {x: 0.49999988, y: 0.49999997}
+      pivot: {x: 0.50371736, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -432,6 +432,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 636922383967532110
+  userData: 636924475400438387
   assetBundleName: 
   assetBundleVariant: 
