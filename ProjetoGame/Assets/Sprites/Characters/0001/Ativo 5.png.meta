@@ -171,12 +171,12 @@ TextureImporter:
       name: Ativo 5_2
       rect:
         serializedVersion: 2
-        x: 902
+        x: 902.00006
         y: 979
-        width: 149
+        width: 148.99994
         height: 111
       alignment: 9
-      pivot: {x: 0.5, y: 0.5315316}
+      pivot: {x: 0.4999998, y: 0.5315316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: Ativo 5_3
       rect:
         serializedVersion: 2
-        x: 854
+        x: 854.00006
         y: 754
-        width: 148
+        width: 147.99994
         height: 92
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.49999982, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,9 +300,9 @@ TextureImporter:
         x: 361.78635
         y: 301.40906
         width: 188.25912
-        height: 269.96722
+        height: 269.96716
       alignment: 9
-      pivot: {x: 0.49513486, y: 0.50224966}
+      pivot: {x: 0.49513486, y: 0.5022498}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,7 +365,7 @@ TextureImporter:
         width: 249
         height: 246
       alignment: 9
-      pivot: {x: 0.49999997, y: 0.48983738}
+      pivot: {x: 0.49999997, y: 0.48983735}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,11 +382,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 947.00006
-        y: 7
+        y: 7.0000076
         width: 268.99994
         height: 247
       alignment: 9
-      pivot: {x: 0.50371736, y: 0.5}
+      pivot: {x: 0.50371736, y: 0.49999997}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -432,6 +432,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 636924962191923578
+  userData: 636930515240968121
   assetBundleName: 
   assetBundleVariant: 
